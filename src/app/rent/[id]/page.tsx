@@ -19,7 +19,7 @@ export default function Home() {
           initial: { opacity: 0, y: -30 },
           animate: { opacity: 1, y: 0 },
           transition: { duration: 0.4, ease: "easeOut" },
-        })} className="mx-5 mt-20 md:mt-0 md:mx-20 pt-2 md:pt-6 space-y-5 md:space-y-7 text-[#3e4451]">
+        })} className="mx-5 mt-15 md:mt-0 md:mx-20 pt-2 md:pt-6 space-y-5 md:space-y-7 text-[#3e4451]">
             <h3 className="font-bold text-center "><span className='relative underline-rounded'>{tehnic?.descriptionName ? tehnic?.descriptionName : tehnic?.name}</span></h3>
             <div className="flex flex-col text-lg  md:flex-row gap-6 font-semibold  md:space-y-0">
             <MotionImage 

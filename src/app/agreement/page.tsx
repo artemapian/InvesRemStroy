@@ -9,7 +9,7 @@ export default function Home() {
           initial: { opacity: 0, y: -30 },
           animate: { opacity: 1, y: 0 },
           transition: { duration: 1, ease: "easeOut" },
-        })} className="flex flex-col pt-10 mx-10 md:mx-30 space-y-5 text-xl">
+        })} className="flex flex-col pt-20 mx-10 md:mx-30 space-y-5 text-xl">
             <h3 className="text-center font-bold">Согласие на обработку персональных данных</h3>
             <div>
                 Пользователь, оставляя обращение, заявку на сайте http://spec-tehn.ru (далее также – сайт), или соглашаясь с офертой на сайте, принимает настоящее Согласие на обработку персональных данных.
