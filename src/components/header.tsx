@@ -134,6 +134,7 @@ const Header = React.memo(() => {
           <Button
             variant="ghost"
             size="icon"
+            value='Навигация | Заказать звонок'
             onClick={() => {
               setMenuOpen(menuOpen ? false : true);
             }}
