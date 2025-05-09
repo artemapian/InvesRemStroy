@@ -22,7 +22,7 @@ export const TitleMainPage = () => {
         <div className="2xl:my-8 my-4 space-x-5 flex flex-wrap md:space-y-0 space-y-4">
             <Application 
             title="Заказать технику"
-            className="bg-[#ec9f23] outline-none cursor-pointer  hover:bg-[#eba83c]  text-white md:text-xl flex w-full sm:h-[48px] px-7  md:w-auto justify-center text-lg font-semibold"
+            className="bg-[#ec9f23] outline-none cursor-pointer  hover:bg-[#eba83c]  text-white md:text-xl flex w-full h-[48px] px-7  md:w-auto justify-center text-lg font-semibold"
             />
             <Button
                 variant='link'
@@ -32,7 +32,7 @@ export const TitleMainPage = () => {
                     element.scrollIntoView({ behavior: "smooth" });
                     }
                 }} 
-                className="hover:text-[#ec9f23] flex md:w-auto w-full  sm:h-[48px] justify-center px-7 items-center rounded-md text-white border border-white hover:border-[#ec9f23] md:text-xl text-lg font-semibold hover:bg-transparent">
+                className="hover:text-[#ec9f23] flex md:w-auto w-full h-[48px] justify-center px-7 items-center rounded-md text-white border border-white hover:border-[#ec9f23] md:text-xl text-lg font-semibold hover:bg-transparent">
                 Посмотреть каталог
             </Button>
         </div>
