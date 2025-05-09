@@ -8,7 +8,7 @@ export const ContactUs = () => {
         <div className="relative flex">
           <div className="absolute bottom-0 left-0 w-full h-1 rounded-full bg-[#ffa617]"></div>
         </div>
-        <div className="space-y-4">
+        <div className="md:pt-0 pt-2 space-y-4">
             <div className="flex font-semibold space-x-4 items-center text-xl md:text-2xl">
                 <Phone className="md:w-8 md:h-8 w-7 h-7" />
                 <div className="flex flex-col space-y-2">
