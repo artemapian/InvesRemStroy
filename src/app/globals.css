@@ -176,7 +176,12 @@ img{
   border-radius: 50%;
   animation: spin 0.6s linear infinite;
 }
-
+@media (max-width: 768px) {
+  .loading::after{
+    bottom: 19%;
+  }
+  
+}
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
