@@ -7,13 +7,12 @@ const MainPage = React.memo(() => {
         <div id='main' className="absolute -top-[250px] " aria-hidden="true"></div>
         <div className="absolute inset-0 z-0 ">
             <div
-            className="w-auto h-full"
+            className="w-auto h-full bg-scroll md:bg-fixed"
             style={{
                 backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("/main-page.webp")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
             }}
             />
             </div>
