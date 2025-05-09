@@ -23,7 +23,6 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.56.0",
-    "react-image-and-background-image-fade": "^1.0.8",
     "react-imask": "^7.6.1",
     "react-toastify": "^11.0.5",
     "resend": "^4.5.1",
