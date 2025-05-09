@@ -5,6 +5,7 @@ import { RequestDialogForm } from "./request-dialog-form";
 import { Button } from "./ui/button";
 import React, { useState } from "react";
 import { Phone } from "lucide-react";
+import { useIsMobile } from "./hooks/useMobile";
 interface Props {
     iconName?: string
     title: string;
@@ -12,6 +13,7 @@ interface Props {
     comment?: string
 }
 export function Application({comment, title, className, iconName}: Props) {
+    const {isMobile} = useIsMobile()
     const Icon = iconName ? Phone : null;
     const [open, setOpen] = useState(false);
     return (
@@ -22,7 +24,7 @@ export function Application({comment, title, className, iconName}: Props) {
             {title}
         </Button>
         </DialogTrigger>
-        <DialogContent className="w-auto fade-in h-auto data-[state=open]:animate-fade-in data-[state=closed]:animate-fade-out">
+        <DialogContent onInteractOutside={(e) => {if(isMobile) e.preventDefault()}} className="w-auto fade-in h-auto data-[state=open]:animate-fade-in data-[state=closed]:animate-fade-out">
             <DialogHeader>
             <DialogTitle>
                 <div className="flex gap-2 font-bold p-2 md:p-4 text-2xl md:text-4xl items-center justify-between">
