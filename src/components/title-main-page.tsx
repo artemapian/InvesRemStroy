@@ -12,7 +12,7 @@ export const TitleMainPage = () => {
           animate: { opacity: 1, y: 0 },
           transition: { duration: 1, ease: "easeOut" },
         })}
-        className='relative title-main-page md:mt-0 text-white md:mb-15 max-w-4xl z-10'>
+        className='relative title-main-page md:mt-0  text-white md:mb-15 md:max-w-4xl z-10'>
         <h1 className="font-bold">
             Аренда спецтехники в Саратове и Саратовской области
         </h1>
