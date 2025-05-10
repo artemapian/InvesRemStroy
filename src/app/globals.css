@@ -233,8 +233,8 @@ h6 {
 }
 @media (max-width: 480px) {
   h1 {
-    font-size: var(--text-3xl); /* Самый маленький размер на телефонах */
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+    font-size: 33px; /* Самый маленький размер на телефонах */
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   h2 {
     font-size: var(--text-3xl);
