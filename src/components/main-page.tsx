@@ -3,7 +3,7 @@ import { TitleMainPage } from "./title-main-page"
 
 const MainPage = React.memo(() => {
     return (
-        <div className="will-change-transform relative min-h-[100vh] overflow-hidden flex items-center px-5 py-1 md:px-20">
+        <div className="will-change-transform relative min-h-[105vh] md:min-h-[100vh] overflow-hidden flex items-center px-5 py-1 md:px-20">
         <div id='main' className="absolute -top-[250px] " aria-hidden="true"></div>
         <div className="absolute inset-0 z-0 ">
             <div

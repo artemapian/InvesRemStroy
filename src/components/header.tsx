@@ -23,13 +23,15 @@ const Header = React.memo(() => {
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
   const MotionOrHeader = isMobile ? 'header' : motion.header;
+  const menuJustClosedRef = useRef<HTMLDivElement>(null);
   const isAnotherPage = pathname !== '/';
     const menuRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
       const handleClickOutside = (event: MouseEvent) => {
         setTimeout(() => {
-          if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+          if (menuRef.current && !menuRef.current.contains(event.target as Node) && !menuJustClosedRef) {
             setMenuOpen(false);
           }
         }, 10); // подождать завершения клика
@@ -170,11 +172,14 @@ const Header = React.memo(() => {
                   8 (902) 710-01-01
                 </Link>
                 <p className="text-[15px] text-[#637288]">Ежедневно, круглосуточно</p>
-                <Application
-                  title="Заказать звонок"
-                  className="cursor-pointer mt-4 gap-2 h-10 text-[15px] text-white"
-                  iconName="Phone"
-                />
+                <div ref={menuJustClosedRef} className='flex mt-4 h-10'>
+                  <Application
+                    title="Заказать звонок"
+                    className="cursor-pointer gap-2 w-full h-full text-[15px] text-white"
+                    iconName="Phone"
+                  />
+                </div>
+                
               </div>
             </div>
           </motion.div>

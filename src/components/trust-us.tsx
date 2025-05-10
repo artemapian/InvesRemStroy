@@ -5,7 +5,7 @@ import 'swiper/css/autoplay';
 import { motion } from 'framer-motion';
 import { Autoplay } from 'swiper/modules';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 const logos = [
   '/logo/koroldivanov.webp',
   '/logo/metro.webp',
@@ -20,6 +20,7 @@ const logos = [
 
 const TrustBanner = React.memo(() => {
   const MotionImage = motion(Image)
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <div className="space-y-6 md:space-y-10 bg-white">
     <h3 className="text-center text-[#3e4451] font-bold">Нам <span id='trust' className='text-[#f09605] relative underline-rounded'>доверяют</span></h3>
@@ -42,9 +43,10 @@ const TrustBanner = React.memo(() => {
               width={200} 
               height={110}
               loading='lazy'
-              initial={{ opacity: 0 }} 
-              animate={{ opacity: 1 }} 
-              transition={{ duration: 0.6 }} 
+              onLoad={() => setIsLoaded(true)}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: isLoaded ? 1 : 0 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }} 
               src={src} alt={`Логотип ${index}`} 
               className="mx-auto max-w-60 h-24 md:h-27 md:max-w-50 2xl:max-w-60 rounded-sm object-contain" />
           </SwiperSlide>
