@@ -1,10 +1,9 @@
-'use client'
 import React from "react";
 import { TitleMainPage } from "./title-main-page"
-import Div100vh from 'react-div-100vh'
+
 const MainPage = React.memo(() => {
     return (
-        <Div100vh className="relative overscroll-none overflow-hidden flex items-center px-5 py-1 md:px-20">
+        <div className="relative h-[100vh] max-h-[100%] overflow-hidden flex items-center px-5 py-1 md:px-20">
         <div id='main' className="absolute -top-[250px] " aria-hidden="true"></div>
         <div className="absolute inset-0 z-0 ">
             <div
@@ -15,7 +14,7 @@ const MainPage = React.memo(() => {
             />
             </div>
         <TitleMainPage />
-    </Div100vh>
+    </div>
     )
 });
 MainPage.displayName = "TrustBanner";
