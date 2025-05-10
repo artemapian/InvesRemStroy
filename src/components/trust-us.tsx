@@ -46,7 +46,7 @@ const TrustBanner = React.memo(() => {
               onLoad={() => setIsLoaded(true)}
               initial={{ opacity: 0 }}
               animate={{ opacity: isLoaded ? 1 : 0 }}
-              transition={{ duration: 0.6, ease: 'easeOut' }} 
+              transition={{ duration: 0.6, ease: 'easyIn' }} 
               src={src} alt={`Логотип ${index}`} 
               className="mx-auto max-w-60 h-24 md:h-27 md:max-w-50 2xl:max-w-60 rounded-sm object-contain" />
           </SwiperSlide>

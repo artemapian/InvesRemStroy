@@ -83,7 +83,14 @@ img{
 #abouttehnix.underline-rounded::after {
   top: 32px
 }
-
+@media (max-width: 768px) {
+  .underline-rounded::after {
+    bottom: -9px;
+  }
+  #trust.underline-rounded::after {
+    bottom: -9px;
+  }
+}
 .service {
   display: flex;
   flex-direction: column;

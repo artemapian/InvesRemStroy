@@ -39,7 +39,7 @@ export const SelectedImage:React.FC<Props> = ({selectedImage, setSelectedImage})
           transition: { duration: 0.4, ease: "easeOut" },
         })}
       >
-          <div className="relative inline-block items-center min-w-[300px] min-h-[200px] max-w-[90vw] max-h-[90vh]">
+          <div className="relative inline-block items-center min-w-[360px] min-h-[269px] max-w-[90vw] max-h-[90vh]">
             <MotionImage
               loading="lazy"
               onLoad={() => setLoaded(true)}
@@ -48,8 +48,8 @@ export const SelectedImage:React.FC<Props> = ({selectedImage, setSelectedImage})
               transition={{ duration: 0.4 }}
               src={`/gallery/${selectedImage}`}
               alt={selectedImage}
-              width={800}
-              height={100}
+              width={900}
+              height={200}
               className="w-auto h-auto object-contain"
             />
             <button
