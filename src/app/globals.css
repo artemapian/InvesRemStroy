@@ -35,9 +35,6 @@ body {
   html, body {
     padding-top: 0; /* Убедиться, что нет отступов сверху */
   }
-  .title-main-page.chrome-mobile {
-    padding-top: 20px;
-  }
 }
 .test {
   background-color: var(--primary); /* Переменная из :root */
