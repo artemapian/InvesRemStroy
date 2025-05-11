@@ -3,7 +3,7 @@ import { TitleMainPage } from "./title-main-page"
 
 const MainPage = React.memo(() => {
     return (
-        <div className="main-page relative pt-[50px] transition-height duration-300 ease-in-out xl:pb-20 2xl:pb-0 md:mt-0 h-[100lvh] overflow-hidden flex items-center px-5 py-1 md:px-20">
+        <div className="main-page relative mt-[50px] transition-height duration-200 ease-in-out xl:pb-20 2xl:pb-0 md:mt-0 h-[100lvh] overflow-hidden flex items-center px-5 py-1 md:px-20">
         <div id='main' className="absolute -top-[250px] " aria-hidden="true"></div>
         <div className="absolute inset-0 z-0 ">
             <div
