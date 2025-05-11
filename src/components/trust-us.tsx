@@ -42,7 +42,6 @@ const TrustBanner = React.memo(() => {
             <MotionImage
               width={200} 
               height={110}
-              loading='lazy'
               onLoad={() => setIsLoaded(true)}
               initial={{ opacity: 0 }}
               animate={{ opacity: isLoaded ? 1 : 0 }}
