@@ -1,12 +1,11 @@
-'use client';
+'use client'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import { motion } from 'framer-motion';
 import { Autoplay } from 'swiper/modules';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
-
+import React, { useState } from 'react';
 const logos = [
   '/logo/koroldivanov.webp',
   '/logo/metro.webp',
@@ -20,26 +19,11 @@ const logos = [
 ];
 
 const TrustBanner = React.memo(() => {
-  const MotionImage = motion(Image);
-  const [loadedImages, setLoadedImages] = useState<boolean[]>([]);
-
-  useEffect(() => {
-    setLoadedImages(new Array(logos.length).fill(false));
-  }, []);
-
-  const handleLoad = (index: number) => {
-    setLoadedImages((prev) => {
-      const updated = [...prev];
-      updated[index] = true;
-      return updated;
-    });
-  };
-
+  const MotionImage = motion(Image)
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <div className="space-y-6 md:space-y-10 bg-white">
-      <h3 className="text-center text-[#3e4451] font-bold">
-        Нам <span id="trust" className="text-[#f09605] relative underline-rounded">доверяют</span>
-      </h3>
+    <h3 className="text-center text-[#3e4451] font-bold">Нам <span id='trust' className='text-[#f09605] relative underline-rounded'>доверяют</span></h3>
       <Swiper
         modules={[Autoplay]}
         slidesPerView={4}
@@ -47,31 +31,29 @@ const TrustBanner = React.memo(() => {
         loop={true}
         autoplay={{ delay: 600, disableOnInteraction: false }}
         breakpoints={{
-          0: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 5 },
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 5 },
         }}
       >
         {logos.map((src, index) => (
           <SwiperSlide key={index}>
             <MotionImage
-              width={200}
+              width={200} 
               height={110}
-              onLoad={() => handleLoad(index)}
+              onLoad={() => setIsLoaded(true)}
               initial={{ opacity: 0 }}
-              animate={{ opacity: loadedImages[index] ? 1 : 0 }}
-              transition={{ duration: 0.3, ease: 'easeOut' }}
-              src={src}
-              alt={`Логотип ${index}`}
-              className="mx-auto max-w-60 h-24 md:h-27 md:max-w-50 2xl:max-w-60 rounded-sm object-contain"
-            />
+              animate={{ opacity: isLoaded ? 1 : 0 }}
+              transition={{ duration: 0.3, ease: 'easyOut' }} 
+              src={src} alt={`Логотип ${index}`} 
+              className="mx-auto max-w-60 h-24 md:h-27 md:max-w-50 2xl:max-w-60 rounded-sm object-contain" />
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
-  );
-});
+  )
+})
 TrustBanner.displayName = "TrustBanner";
 
 export default TrustBanner;
