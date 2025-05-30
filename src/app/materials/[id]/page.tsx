@@ -1,7 +1,7 @@
 'use client'
 import { Application } from "@/components/application";
+import { materials } from "@/components/costants";
 import { useIsMobile } from "@/components/hooks/useMobile";
-import { materials } from "@/components/offer/building-materials"
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useParams } from "next/navigation";

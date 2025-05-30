@@ -25,7 +25,7 @@ export const ContactUs = () => {
                     <div className="relative"><div className="absolute top-3 left-0 w-full h-0.5 rounded-full bg-gray-600" /></div>
                     <div className="mt-6 space-y-1">
                         <p>Работаем круглосуточно</p>
-                        <p >stroyka.sar2010@mail.ru</p>
+                        <p>stroyka.sar2010@mail.ru</p>
                     </div>
                 </div>
                 

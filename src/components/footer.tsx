@@ -33,7 +33,6 @@ const equipmentRentals = [
     "ЖБК-конструкции"
   ];
 export const Footer = () => {
-    
     return (
         <div className="flex flex-col md:flex-row justify-between md:space-y-0 gap-4">
             <div className="flex max-w-100 font-semibold flex-col text-white space-y-5">

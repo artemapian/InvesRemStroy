@@ -1,12 +1,12 @@
 'use client'
 import { Application } from "@/components/application";
 import { useIsMobile } from "@/components/hooks/useMobile";
-import { tehnix } from "@/components/offer/special-equipment"
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
+import { tehnix } from "@/components/costants";
 export default function Home() {
     const { id } = useParams<{id: string}>(); // получаем id из URL
     const tehnic = tehnix.find(p => p.slug === id);

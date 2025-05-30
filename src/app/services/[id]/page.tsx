@@ -1,12 +1,12 @@
 'use client'
 import { Application } from "@/components/application";
 import { useIsMobile } from "@/components/hooks/useMobile";
-import { services } from "@/components/offer/equimpent-services"
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
+import { services } from "@/components/costants";
 export default function Home() {
     const { id } = useParams<{id: string}>(); // получаем id из URL
     const service = services.find(p => p.slug === id);

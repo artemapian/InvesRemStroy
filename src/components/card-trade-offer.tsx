@@ -11,7 +11,7 @@ interface Props {
     title: string;
     description: string
 }
-export const CardTradeOffer:React.FC<Props> = ({className, icon: Icon, title, description}) => {
+const CardTradeOfferComponent:React.FC<Props> = ({className, icon: Icon, title, description}) => {
     return(
         <div
             className={cn("sm:space-y-2 h-full p-3 pr-6 sm:p-6 items-center transition-shadow hover:shadow-md bg-[#f1f5f9] rounded-lg", className)}>
@@ -21,3 +21,4 @@ export const CardTradeOffer:React.FC<Props> = ({className, icon: Icon, title, de
         </div>
     )
 }
+export const CardTradeOffer = React.memo(CardTradeOfferComponent);
