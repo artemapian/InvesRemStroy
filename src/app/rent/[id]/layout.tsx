@@ -1,5 +1,5 @@
+import { tehnix } from '@/components/constants'
 import type { Metadata } from 'next'
-import { tehnix } from "@/components/offer/special-equipment";
 type Props = {
   params: Promise<{ id: string }>
 }

@@ -1,5 +1,5 @@
+import { services } from '@/components/constants'
 import type { Metadata } from 'next'
-import { services } from '@/components/offer/equimpent-services'
 type Props = {
   params: Promise<{ id: string }>
 }

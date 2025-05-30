@@ -1,5 +1,5 @@
+import { materials } from '@/components/constants'
 import type { Metadata } from 'next'
-import { materials } from '@/components/offer/building-materials';
 type Props = {
   params: Promise<{ id: string }>
 }
