@@ -12,8 +12,8 @@ export const ContactUs = () => {
             <div className="flex font-semibold space-x-4 items-center text-xl md:text-2xl">
                 <Phone className="md:w-8 md:h-8 w-7 h-7" />
                 <div className="flex flex-col space-y-2">
+                    <Link href="tel:+79603561830">{"8 (960) 356-18-30"}</Link>
                     <Link href="tel:+79027100101">{"8 (902) 710-01-01"}</Link>
-                    <Link href="tel:+78452491830">{"8 (8452) 49-18-30"}</Link>
                 </div>
             </div>
             <div className="flex space-x-4 ">  

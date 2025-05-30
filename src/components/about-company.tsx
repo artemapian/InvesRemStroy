@@ -32,7 +32,7 @@ const AboutCompany = React.memo(() => {
                         <div className="flex flex-wrap space-y-2">
                             <div className="flex space-x-2">
                                 <Phone size={26} color="#ffa617"/>
-                                <Link className="text-[17px] mr-3" href="tel:+79027100101">{"8 (902) 710-01-01"}</Link>
+                                <Link className="text-[17px] mr-3" href="tel:+79603561830">{"8 (960) 356-18-30"}</Link>
                             </div>
                             <div className="flex space-x-2">
                                 <Mail size={26} color="#ffa617"/>

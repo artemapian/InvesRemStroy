@@ -120,8 +120,8 @@ const Header = React.memo(() => {
             </div>
             <div className='flex flex-wrap items-center justify-end gap-3'>
               <div className="flex flex-col items-end ml-2">
-                <Link href="tel:+79027100101" className="text-[16px] font-semibold">
-                  8 (902) 710-01-01
+                <Link href="tel:+79603561830" className="text-[16px] font-semibold">
+                  8 (960) 356-18-30
                 </Link>
                 <p className="text-xs text-[#637288]">Ежедневно, круглосуточно</p>
               </div>
@@ -168,8 +168,8 @@ const Header = React.memo(() => {
                 </Button>
               ))}
               <div className="flex flex-col">
-                <Link href="tel:+79027100101" className="text-[17px] font-semibold">
-                  8 (902) 710-01-01
+                <Link href="tel:+79603561830" className="text-[17px] font-semibold">
+                  8 (960) 356-18-30
                 </Link>
                 <p className="text-[15px] text-[#637288]">Ежедневно, круглосуточно</p>
                 <div ref={menuJustClosedRef} className='flex mt-4 h-10'>

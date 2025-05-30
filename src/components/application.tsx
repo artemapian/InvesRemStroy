@@ -34,7 +34,7 @@ export function Application({comment, title, className, iconName}: Props) {
                 <div className="flex flex-col p-1 md:p-3 font-semibold text-center text-xl md:text-3xl">
                     <p>Заявка на бесплатную консультацию</p>
                     <div className="mt-3 font-normal text-[18px]">
-                        <Link href="tel:+79027100101">{"8 (902) 710-01-01"}</Link> <span className="hidden md:inline">|</span> stroyka.sar2010@mail.ru
+                        <Link href="tel:+79603561830">{"8 (960) 356-18-30"}</Link> <span className="hidden md:inline">|</span> stroyka.sar2010@mail.ru
                     </div>
                 </div>
             </DialogTitle>
