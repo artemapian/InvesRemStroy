@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "../card"
-import { services } from "../costants";
+import { services } from "../constants";
 
   
 const EquipmentServises = React.memo(() => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "../card"
-import { tehnix } from "../costants";
+import { tehnix } from "../constants";
 
 const SpecialEqiupment = React.memo(() => {
     return (

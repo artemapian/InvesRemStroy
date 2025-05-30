@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
-import { tehnix } from "@/components/costants";
+import { tehnix } from "@/components/constants";
 export default function Home() {
     const { id } = useParams<{id: string}>(); // получаем id из URL
     const tehnic = tehnix.find(p => p.slug === id);

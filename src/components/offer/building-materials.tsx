@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "../card"
-import { materials } from "../costants";
+import { materials } from "../constants";
 
 const BuildingMaterials = React.memo(() => {
     return (
