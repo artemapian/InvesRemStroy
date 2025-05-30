@@ -20,10 +20,14 @@ const BuildingMaterials = React.memo(() => {
             img={item.img}
             renderDescription={
                 <>
-                <div className="flex justify-between">
-                    <span>Фракция:</span>
-                    <span className="font-bold text-[#f09605]">{item.fraction} мм.</span>
-                </div>
+                {
+                    item.fraction && (
+                    <div className="flex justify-between">
+                        <span>Фракция:</span>
+                        <span className="font-bold text-[#f09605]">{item.fraction} мм.</span>
+                    </div>
+                    )
+                }
                 <div className="flex justify-between">
                     <span>Стоимость:</span>
                     <span dangerouslySetInnerHTML={{__html: item.price}} className="font-bold text-[#f09605]"/>
