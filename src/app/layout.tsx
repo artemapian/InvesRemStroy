@@ -19,7 +19,10 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
         <link rel="preload" as="image" href="/main-page.webp" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
