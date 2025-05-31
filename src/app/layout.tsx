@@ -8,6 +8,15 @@ import { Map } from "@/components/map";
 export const metadata: Metadata = {
   title: "Аренда спецтехники Саратов | «ИнвестРемСтрой»",
   description: "Компания «ИнвестРемСтрой» предоставляет услуги аренды спецтехники в Саратове и Саратовской области: экскаваторы, погрузчики, автокраны и другая техника для строительства и ремонта и доставку строительных материалов. Выгодные условия, быстрая подача, качественное оборудование с гарантией.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -17,16 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <head>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
-        <link rel="preload" as="image" href="/main-page.webp" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-      </head>
+      <head />
       <body>
         <Header />
         <main>{children}</main>
