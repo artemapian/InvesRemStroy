@@ -34,11 +34,14 @@ const Header = React.memo(() => {
           if (menuRef.current && !menuRef.current.contains(event.target as Node) && !menuJustClosedRef) {
             setMenuOpen(false);
           }
+          if(menuJustClosedRef && menuRef.current!.contains(event.target as Node) && menuRef.current ){
+            return
+          }
         }, 10); // подождать завершения клика
       };
-    
+      
       const handleScroll = () => {
-        if(!menuJustClosedRef) setMenuOpen(false);
+        setMenuOpen(false);
         
       };
     
