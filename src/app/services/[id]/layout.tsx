@@ -9,7 +9,7 @@ export async function generateMetadata(
   const { id } = await params
   const service = services.find((item) => item.slug == id)
   return {
-    title: `${service?.title} в Саратове и Энгельсе`,
+    title: `${service?.title} в Саратове | «ИнвестРемСтрой»`,
   }
 }
 export default function MaterialsLayout({

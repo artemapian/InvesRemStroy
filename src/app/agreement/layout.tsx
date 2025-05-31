@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "ИнвестРемСтрой - Согласие на обработку персональных данных",
+  title: "«ИнвестРемСтрой» - Согласие на обработку персональных данных",
 };
 export default function MaterialsLayout({
   children,

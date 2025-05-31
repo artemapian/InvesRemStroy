@@ -9,7 +9,7 @@ export async function generateMetadata(
   const { id } = await params
   const tehnic = tehnix.find((item) => item.slug == id)
   return {
-    title: `Аренда ${tehnic?.descriptionType} в Саратове и Энгельсе`,
+    title: `Аренда ${tehnic?.descriptionType} в Саратове | «ИнвестРемСтрой»`,
   }
 }
 export default function RentLayout({
