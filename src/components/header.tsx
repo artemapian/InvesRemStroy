@@ -38,7 +38,8 @@ const Header = React.memo(() => {
       };
     
       const handleScroll = () => {
-        setMenuOpen(false);
+        if(!menuJustClosedRef) setMenuOpen(false);
+        
       };
     
       if (menuOpen) {
